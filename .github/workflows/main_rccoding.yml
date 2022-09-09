@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'rccoding'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D72E9B5FCBCF4296A674B5D93B602564 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B48D836C0BEC43D7ADE7A39CC06FB77B }}
           package: .
