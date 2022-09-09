@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="RC.Net.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>RC.Net</title>
+
+    <link href="bootstrap/css2/bootstrap.min.css" rel="stylesheet" />
+    <link href="Fontawsome/css/all.css" rel="stylesheet" />
+    <link href="Css/RC_master.css" rel="stylesheet" />
+    
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-ewfXo9Gq53e1q1+WDTjaHAGZ8UvCWq0eXONhwDuIoaH8xz2r96uoAYaQCm1oQhnBfRXrvJztNXFsTloJfgbL5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image: url('https://localhost:44358/Image/background.jpg'); font-family:'Bookman Old Style'; font-size:small">
+    <form id="form1" runat="server">
+        <div class="row" style="font-family:'Bookman Old Style'; font-size:small">
+            <div class="col-md-12 mx-auto">
+                <div class="card">
+                    <div class="card-header " style="background-color: #000093; color: #FFFFFF">
+                        <nav class="navbar navbar-expand-lg" style="background-color:#000093; color:white">
+            <img src="Image/logo2.JPG" id="img_logo" runat="server" height="75" width="250" class="Image1" />&nbsp;&nbsp;&nbsp;
+  <a style="color:white; font-family:'Bodoni MT Black'" class="navbar-brand" href="#"> RC.Net</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a style="color:white" class="nav-link fas fa-home" " href="Home.aspx"> Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a style="color:white" class="nav-link  fas fa-wrench" href="services.aspx"> Sevices</a>
+      </li>
+      
+      <li class="nav-item">
+        <a style="color:white" class="nav-link  fas fa-comment" href="contact_us.aspx"> Contact Us</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-10 mx-auto">
+                            <hr />
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <hr />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer" style="background-color: #000093; color: #FFFFFF"">
+                    <br /><br />
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <div class="card" style="background-color:transparent; border:none">
+                                <div class="card-header" style="text-align-last:center">
+                                    <label style="color:white;">Follow us & Contact us</label>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2" style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa-brands fa-facebook" href="https://www.facebook.com/RCNet-102700519254570"></a>
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa-brands fa-instagram" href="#"></a>
+                                        </div>
+                                        <div class="col-md-2" style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa-brands fa-twitter" href="#"></a>
+                                        </div>
+                                        <div class="col-md-2"style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa-brands fa-linkedin" href="#"></a>
+                                        </div>
+                                        <div class="col-md-2"style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa-brands fa-whatsapp" href="#"></a>
+                                        </div>
+                                        <div class="col-md-2"style="text-align:center">
+                                            <a style="color:white; font-size:medium" class="nav-link fa fa-envelope" href="#"></a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    
+                                    <div class="row">
+                                        <div class="col" style="text-align:center">
+                                            <label style="color:white; font-family:'Bookman Old Style'; font-size:small" class="input">Telephone: </label>
+                                            <asp:LinkButton ID="ll_telephone" CssClass="input fa fa-phone" ForeColor="White" Font-Size="smaller" runat="server"> +509 3575-4783</asp:LinkButton>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col">
+                            <label style="color:white; font-size:smaller;">All Right Reserved 2022 @ RC.net</label>
+                        </div>
+                    </div>
+                     <br /><br /><br /><br /><br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            
+        </div>
+    </form>
+    <script src="bootstrap/js2/jquery.slim.min.js"></script>
+    <script src="bootstrap/js2/popper.min.js"></script>
+    <script src="bootstrap/js2/bootstrap.bundle.min.js"></script>
+    <script src="Fontawsome/js/all.js"></script>
+     <scrip src="https://ajax.com.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></scrip>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
